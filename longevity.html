@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>longevity</title>
+            <link rel="shortcut icon" href="icon1.ico" type="image/x-icon" />
+            <style>
+                body {
+                    background-image: url("./translation3/bg10.png");
+                    background-repeat: repeat;
+                    background-size:contain; 
+                    /* background-image: radial-gradient(red, green, blue); */
+                    white-space: pre;
+                    cursor: auto; 
+                }
+                p {
+                    width: 100vw;
+                    white-space: normal;
+                }
+                .dot{
+                    cursor: help; 
+                    z-index: 100;
+                    position: absolute;
+                    margin-left: -3.5vw;
+                    margin-top: -2vh;
+                    width: 3vw;
+                    height: 3vw;
+                    border: 5px solid yellow;
+                    transition: filter 10s;
+                }.dot:hover{
+                    transition: filter 0s;
+                    filter:brightness(10);
+                }
+                .pos{
+                    transition-duration: 1s;
+                    z-index: 100;
+                    position: absolute;
+                    margin-left: -4vw;
+                    margin-top: 3vh;
+                    color:white;
+                    top: 4.5vw;
+                    line-height: 2vw;
+                    font-size: 15px;
+                    font-family: monospace;
+                    text-align: left;
+                    letter-spacing: 0px;
+                }
+                #dot1{
+                    left: 5.92vw;
+                    top: 17.98vw;
+                }
+                #dot2{
+                    left: 13.88vw;
+                    top: 12.465vw;
+                }
+                #dot3{
+                    left: 33.563vw;
+                    top: 10.146vw;
+                }
+                #dot4{
+                    left: 41.9vw;
+                    top: 9.018vw;
+                }
+                #dot5{
+                    left: 46.351vw;
+                    top: 4.881vw;
+                }
+                #dot6{
+                    left: 54.187vw;
+                    top: 3.7vw;
+                }
+                #dot7{
+                    left: 61.96vw;
+                    top: 4.191vw;
+                }
+                #dot8{
+                    left: 69.294vw;
+                    top: 5.382vw;
+                }
+                #dot9{
+                    left: 77.882vw;
+                    top: 7.2vw;
+                }
+                #dot10{
+                    left: 84.777vw;
+                    top: 9.018vw;
+                }
+                #dot11{
+                    left: 9.555vw;
+                    top: 36.662vw;
+                }
+                #dot12{
+                    left: 18.456vw;
+                    top: 36.662vw;
+                }
+                #dot13{
+                    left: 24.474vw;
+                    top: 36.662vw;
+                }
+                #dot14{
+                    left: 29.489vw;
+                    top: 36.662vw;
+                }
+                #dot15{
+                    left: 53.622vw;
+                    top: 36.662vw;
+                }
+                #dot16{
+                    left: 84.84vw;
+                    top: 36.662vw;
+                }
+                #dot17{
+                    left: 89.415vw;
+                    top: 36.662vw;
+                }
+                #dot18{
+                    left: 94.43vw;
+                    top: 36.662vw;
+                }
+                #dot19{
+                    left: 17.265vw;
+                    top: 49.449vw;
+                }
+                #dot20{
+                    left: 26.793vw;
+                    top: 49.449vw;
+                }
+                #dot21{
+                    left: 29.489vw;
+                    top: 45.438vw;
+                }
+                #dot22{
+                    left: 38.641vw;
+                    top: 49.449vw;
+                }
+                #dot23{
+                    left: 43.029vw;
+                    top: 49.449vw;
+                }
+                #dot24{
+                    left: 48.67vw;
+                    top: 41.488vw;
+                }
+                #dot25{
+                    left: 84.84vw;
+                    top: 40.673vw;
+                }
+                #dot26{
+                    left: 85.9vw;
+                    top: 45.438vw;
+                }
+                #dot27{
+                    left: 89.415vw;
+                    top: 44.873vw;
+                }
+                #dot28{
+                    left: 31.244vw;
+                    top: 58.288vw;
+                }
+                #dot29{
+                    left: 44.22vw;
+                    top: 55.342vw;
+                }
+                #dot30{
+                    left: 47.54vw;
+                    top: 59.42vw;
+                }
+                #dot31{
+                    left: 51.87vw;
+                    top: 63.3vw;
+                }
+                #dot32{
+                    left: 55.94vw;
+                    top: 59.4vw;
+                }
+                #dot33{
+                    left: 66.786vw;
+                    top: 49.95vw;
+                }
+                #dot34{
+                    left: 85.97vw;
+                    top: 49.449vw;
+                }
+                #dot35{
+                    left: 89.4vw;
+                    top: 49.449vw;
+                }
+                #dot36{
+                    left: 87.1vw;
+                    top: 54.2vw;
+                }
+                #dot37{
+                    left: 33.7vw;
+                    top: 65.56vw;
+                }
+                #dot38{
+                    left: 36.76vw;
+                    top: 66.3vw;
+                }
+                #dot39{
+                    left: 39.832vw;
+                    top: 66.7vw;
+                }
+                #dot40{
+                    left: 84.777vw;
+                    top: 63.3vw;
+                }
+                .sculp{
+                    z-index:10;
+                    position: fixed;
+                    width: 21vw;
+                    top: 25vh;
+                }
+                #sculp1{
+                    filter: brightness(200%) drop-shadow(15px 30px 25px violet);
+                    top: 13vh;
+                    left: 57vw;
+                }#sculp1:hover {
+                    filter: brightness(100%) drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.239));
+                }
+                .peach{
+                    transition-duration: 1s;
+                    z-index:9;
+                    position: fixed;
+                    width: 70vw;
+                    left: 5vw;
+                    filter: opacity(0);
+                }
+                #p1{
+                    position: relative;
+                    top: 70vh;
+                }#p1:hover {
+                    filter: opacity(.1) drop-shadow(15px 30px 25px violet);
+                }
+                #p2{
+                    position: relative;
+                    top: 85vh;
+                }#p2:hover {
+                    filter: opacity(.1) drop-shadow(15px 30px 25px violet);
+                }
+                #p3{
+                    position: relative;
+                    top: 100vh;
+                }#p3:hover {
+                    filter: opacity(.1) drop-shadow(15px 30px 25px violet);
+                }
+            </style>
+        </head>
+        <body>
+            <div id="shou">
+                <a href="main page.html"><img class="sculp" id="sculp1" src="./translation3/sculp1.png"></a>
+            </div>
+                <img class="peach" id="p1" src="./translation3/peach.png">
+                <img class="peach" id="p2" src="./translation3/peach.png">
+                <img class="peach" id="p3" src="./translation3/peach.png">
+            <div>
+                <img class="dot" id="dot1" src="./translation3/dot.png">
+                <p class="pos" id="dot1">daying</p>
+                <img class="dot" id="dot2" src="./translation3/dot.png">
+                <p class="pos" id="dot2">jiache</p>
+                <img class="dot" id="dot3" src="./translation3/dot.png">
+                <p class="pos" id="dot3">xiaguan</p>
+                <img class="dot" id="dot4" src="./translation3/dot.png">
+                <p class="pos" id="dot4">shangguan</p>
+                <img class="dot" id="dot5" src="./translation3/dot.png">
+                <p class="pos" id="dot5">heliao</p>
+                <img class="dot" id="dot6" src="./translation3/dot.png">
+                <p class="pos" id="dot6">youbin</p>
+                <img class="dot" id="dot7" src="./translation3/dot.png">
+                <p class="pos" id="dot7">xuanli</p>
+                <img class="dot" id="dot8" src="./translation3/dot.png">
+                <p class="pos" id="dot8">xuanlu</p>
+                <img class="dot" id="dot9" src="./translation3/dot.png">
+                <p class="pos" id="dot9">heyan</p>
+                <img class="dot" id="dot10" src="./translation3/dot.png">
+                <p class="pos" id="dot10">touwei</p>
+                <img class="dot" id="dot11" src="./translation3/dot.png">
+                <p class="pos" id="dot11">chengjiang</p>
+                <img class="dot" id="dot12" src="./translation3/dot.png">
+                <p class="pos" id="dot12">ruiduan</p>
+                <img class="dot" id="dot13" src="./translation3/dot.png">
+                <p class="pos" id="dot13">shuigou</p>
+                <img class="dot" id="dot14" src="./translation3/dot.png">
+                <p class="pos" id="dot14">hanliao</p>
+                <img class="dot" id="dot15" src="./translation3/dot.png">
+                <p class="pos" id="dot15">yintang</p>
+                <img class="dot" id="dot16" src="./translation3/dot.png">
+                <p class="pos" id="dot16">shenting</p>
+                <img class="dot" id="dot17" src="./translation3/dot.png">
+                <p class="pos" id="dot17">shangxing</p>
+                <img class="dot" id="dot18" src="./translation3/dot.png">
+                <p class="pos" id="dot18">baihui</p>
+                <img class="dot" id="dot19" src="./translation3/dot.png">
+                <p class="pos" id="dot19">dicang</p>
+                <img class="dot" id="dot20" src="./translation3/dot.png">
+                <p class="pos" id="dot20">juliao</p>
+                <img class="dot" id="dot21" src="./translation3/dot.png">
+                <p class="pos" id="dot21">yingxiang</p>
+                <img class="dot" id="dot22" src="./translation3/dot.png">
+                <p class="pos" id="dot22">sibai</p>
+                <img class="dot" id="dot23" src="./translation3/dot.png">
+                <p class="pos" id="dot23">chengqi</p>
+                <img class="dot" id="dot24" src="./translation3/dot.png">
+                <p class="pos" id="dot24">qingming</p>
+                <img class="dot" id="dot25" src="./translation3/dot.png">
+                <p class="pos" id="dot25">meichong</p>
+                <img class="dot" id="dot26" src="./translation3/dot.png">
+                <p class="pos" id="dot26">quchai</p>
+                <img class="dot" id="dot27" src="./translation3/dot.png">
+                <p class="pos" id="dot27">wuchu</p>
+                <img class="dot" id="dot28" src="./translation3/dot.png">
+                <p class="pos" id="dot28">quanliao</p>
+                <img class="dot" id="dot29" src="./translation3/dot.png">
+                <p class="pos" id="dot29">qiuhou</p>
+                <img class="dot" id="dot30" src="./translation3/dot.png">
+                <p class="pos" id="dot30">tongziliao</p>
+                <img class="dot" id="dot31" src="./translation3/dot.png">
+                <p class="pos" id="dot31">taiyang</p>
+                <img class="dot" id="dot32" src="./translation3/dot.png">
+                <p class="pos" id="dot32">sizhukong</p>
+                <img class="dot" id="dot33" src="./translation3/dot.png">
+                <p class="pos" id="dot33">yangbai</p>
+                <img class="dot" id="dot34" src="./translation3/dot.png">
+                <p class="pos" id="dot34">linqi</p>
+                <img class="dot" id="dot35" src="./translation3/dot.png">
+                <p class="pos" id="dot35">muchang</p>
+                <img class="dot" id="dot36" src="./translation3/dot.png">
+                <p class="pos" id="dot36">benshen</p>
+                <img class="dot" id="dot37" src="./translation3/dot.png">
+                <p class="pos" id="dot37">tinghui</p>
+                <img class="dot" id="dot38" src="./translation3/dot.png">
+                <p class="pos" id="dot38">tinggong</p>
+                <img class="dot" id="dot39" src="./translation3/dot.png">
+                <p class="pos" id="dot39">ermen</p>
+                <img class="dot" id="dot40" src="./translation3/dot.png">
+                <p class="pos" id="dot40">touwei</p>
+            </div>
+            <script>
+                document.getElementById("shou").onmouseover = function () {
+                    document.getElementById("sculp1").style.filter = "brightness(100%) drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.239))";
+
+                    document.getElementById("p1").style.opacity = ".3";
+                    document.getElementById("p1").style.filter = "drop-shadow(15px 30px 25px violet)";
+                    document.getElementById("p2").style.opacity = ".6";
+                    document.getElementById("p2").style.filter = "drop-shadow(15px 30px 25px violet)";
+                    document.getElementById("p3").style.opacity = ".9";
+                    document.getElementById("p3").style.filter = "drop-shadow(15px 30px 25px violet)";
+                };
+
+                document.getElementById("shou").onmouseout = function () {
+                    document.getElementById("sculp1").style.filter = "filter: brightness(200%) drop-shadow(15px 30px 25px violet);";
+                    
+                    document.getElementById("p1").style.opacity = ".0";
+                    document.getElementById("p1").style.filter = "none";
+                    document.getElementById("p2").style.opacity = ".0";
+                    document.getElementById("p2").style.filter = "none";
+                    document.getElementById("p3").style.opacity = ".0";
+                    document.getElementById("p3").style.filter = "none";
+                };
+                
+                document.getElementById("dot1").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot2").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=500, left=100, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot3").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=290, left=30, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot4").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=700, left=500, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot5").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot6").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot7").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot8").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot9").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot10").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot11").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot12").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=700, left=500, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot13").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=230, left=790, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot14").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=350, left=370, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot15").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=380, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot16").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=460, left=750, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot17").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot18").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=60, left=890, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot19").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=30, left=140, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot20").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=98, left=650, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot21").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot22").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot23").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=570, left=360, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot24").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=335, left=374, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot25").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot26").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot27").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot28").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot29").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot30").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot31").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot32").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=366, left=477, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot33").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=846, left=197, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot34").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot35").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=470, left=86, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot36").onclick = function() {
+                    window.open ('pop3.html', '', 'height=300, width=400, top=40, left=56, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot37").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=360, left=37, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot38").onclick = function() {
+                    window.open ('pop4.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot39").onclick = function() {
+                    window.open ('pop1.html', '', 'height=300, width=400, top=475, left=357, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+                document.getElementById("dot40").onclick = function() {
+                    window.open ('pop2.html', '', 'height=300, width=400, top=75, left=758, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+            </script>
+        </body>
+    </html>
+
+    <!-- IMAGE SOURCES -->

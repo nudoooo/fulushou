@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>blessing</title>
+            <link rel="shortcut icon" href="icon1.ico" type="image/x-icon" />
+            <style>
+                body {
+                    background-image: url("./translation4/rl.jpeg");
+                    background-repeat: repeat;
+                    background-size:contain;
+                    position: relative;
+                    white-space: pre;
+                    cursor: auto; 
+                }
+                p {
+                    width: 100vw;
+                    white-space: normal;
+                }
+                .bg{
+                    filter: blur(1px);
+                    z-index: 1;
+                    position: absolute;
+                    border: 5px solid red;
+                }
+                #bg1{
+                    top: 30vh;
+                    right: 30vh;
+                    width: 40vw;
+                }
+                #top{
+                    z-index: 10;
+                    position: absolute;
+                    top: 10vw;
+                    right: 13vw;
+                    width: 74vw;
+                }
+                #gold{
+                    z-index: 12;
+                    position: absolute;
+                    top: 58vw;
+                    right: 37vw;
+                    width: 34vw;
+                }#gold:hover{
+                    filter: drop-shadow(0 0 30px yellow) brightness(1.5);
+                }
+                #fruit{
+                    z-index: 10;
+                    position: absolute;
+                    top: 57vw;
+                    right: 74vw;
+                    width: 10vw;
+                }
+                #hat{
+                    z-index: 10;
+                    position: absolute;
+                    top: 54vw;
+                    right: 15vw;
+                    width: 20vw;
+                }
+                #yellow{
+                    cursor: progress;
+                    z-index: 10;
+                    position: absolute;
+                    top: 116vw;
+                    right: 10vw;
+                    width: 80vw;
+                }#yellow:hover{
+                    filter: drop-shadow(0 0 20px white) brightness(2);
+                }
+                #original{
+                    cursor: help;
+                    z-index: 51;
+                    position: absolute;
+                    top: 32vw;
+                    right: 37vw;
+                    width: 26vw;
+                }#original{
+                    filter: brightness(1.5);
+                }
+                #light{
+                    transition-duration: 0.3s;
+                    opacity: 0;
+                    z-index: 50;
+                    position: absolute;
+                    top: -5vw;
+                    right: -3vw;
+                    width: 120vw;
+                }
+                #button{
+                    z-index: 100;
+                    position:absolute;
+                    color:yellow;
+                    /* background-color: red; */
+                    width: 6vw;
+                    left: 45vw;
+                    top: 14vw;
+                    text-decoration-line: none;
+                    text-decoration: none;
+                    font-size: 3vw;
+                    line-height: 3vw;
+                    font-family: monospace;
+                    text-align: center;
+                    letter-spacing: 0px;
+                    /* filter: drop-shadow(1px 1px 0px white); */
+                }#button:hover{
+                    color:black;
+                    background-color: rgb(255, 255, 255);
+                    filter: drop-shadow(0px 0px 10px white);
+                }
+            </style>
+        </head>
+        <body>
+            <!-- <img class="bg" id="bg1" src="./translation2/bg1.png"> -->
+            <img id="top" src="./translation4/h-top.png">
+            <img id="gold" src="./translation4/h-gold.png">
+            <img id="fruit" src="./translation4/h-fruit.png">
+            <img id="hat" src="./translation4/h-hat.png">
+            <img id="yellow" src="./translation4/h-yellow.png">
+            <img id="original" src="./translation4/original.png">
+            <img id="light" src="./translation4/light.png">
+            <a href="main page.html"><p id="button">福星高照</p></a>
+            <script>
+                document.getElementById("original").onclick = function() {
+                    window.open ('renshangren.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+
+                document.getElementById("button").onmouseover = function () {
+                    document.getElementById("light").style.opacity = ".9";
+                };
+
+                document.getElementById("button").onmouseout = function () {
+                    document.getElementById("light").style.opacity = ".0";
+                };
+
+                document.getElementById("yellow").onclick = function() {
+                    window.open ('hand.html', '', 'height=300, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no') 
+                }
+            </script>
+        </body>
+    </html>
+
+    <!-- IMAGE SOURCES -->
