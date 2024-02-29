@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>????????</title>
+            <link rel="shortcut icon" href="icon1.ico" type="image/x-icon" />
+            <style>
+                body {
+                    background-image: url("./translation/bg.jpeg");
+                    background-repeat: repeat;
+                    background-size: cover;
+                    white-space: pre;
+                    cursor: default;  
+                }
+                p {
+                    width: 100vw;
+                    white-space: normal;
+                }
+                .headg{
+                    transition-duration: 1s;
+                    filter: blur(5px) drop-shadow(0px 0px 40px black);
+                    cursor: help; 
+                    z-index: 10;
+                    padding-left: 0;
+                    padding-top: 0vh;
+                    position: absolute;
+                    width: 140px;
+                }
+                .headp{
+                    transition-duration: 1s;
+                    filter: blur(5px);
+                    cursor: help; 
+                    opacity: .0;
+                    z-index: 11;
+                    padding-left: 0;
+                    padding-top: 0vh;
+                    position: absolute;
+                    width: 140px;
+                    /* border-radius: 30vh 30vh 30vh 30vh; */
+                }
+                #arch1{
+                    top: 25vh;
+                    left: 13vw;
+                }#arch1:hover{
+                    z-index: 300;
+                    opacity: 1;
+                    filter: blur(2px) drop-shadow(0px 0px 40px white) brightness(1.5);
+                }
+                #arch2{
+                    top: 2vh;
+                    left: 17.5vw;
+                }#arch2:hover{
+                    z-index: 300;
+                    opacity: 1;
+                    filter: blur(2px) drop-shadow(0px 0px 40px white) brightness(1.5);
+                }
+                #arch3{
+                    top: 55vh;
+                    left: 50vw;
+                }#arch3:hover{
+                    z-index: 300;
+                    opacity: 1;
+                    filter: blur(2px) drop-shadow(0px 0px 40px white) brightness(1.5);
+                }
+                #location{
+                    filter: blur(1px);
+                    top: 30px;
+                    right: 30px;
+                    cursor: alias;
+                    z-index: 20;
+                    position: absolute;
+                    width: 180px;
+                    border: 5px solid white;
+                }#location:hover{
+                    /* filter: blur(0px); */
+                    border: 5px solid yellow;
+                }
+                #text{
+                    filter: blur(1px);
+                    cursor: help; 
+                    z-index: 100;
+                    position:relative;
+                    color:red;
+                    width:fit-content;
+                    right: 0.7vw;
+                    font-size: 20px;
+                    font-family: monospace;
+                    text-align: right;
+                    letter-spacing: 3px;
+                }
+                /* #text:hover{
+                    transition: letter-spacing 0.5s;
+                    letter-spacing: 10px;
+                } */
+                #text1{
+                    filter: blur(1.5px);
+                    cursor: url("./translation/🪦.ico"),auto; 
+                    z-index: 100;
+                    position:relative;
+                    color:red;
+                    text-shadow:0px 0px 15px black;
+                    text-decoration: underline;
+                    width:fit-content;
+                    font-size: 20px;
+                    font-family: monospace;
+                    text-align: right;
+                    letter-spacing: 3px;
+                }
+                /* #text1:hover{
+                    transition: letter-spacing 0.5s;
+                    letter-spacing: 10px;
+                } */
+                #icon{
+                    opacity: .0;
+                    z-index: 311;
+                    padding-left: 0;
+                    padding-top: 0vh;
+                    padding-bottom: 0;
+                    padding-right: 0;
+                    position: sticky;
+                    left: 30vw;
+                    bottom: 0vh;
+                    height: 3vh;
+                }#icon:hover{opacity: 1;}
+            </style>
+        </head>
+        <body>
+            <div id="head">
+                <a href=blessing.html><img class="headp" id="arch2" src="./translation/arch2.jpg"></a>
+                <img class="headg" id="arch2" src="./translation/arch2.gif">
+                <a href=wealth.html><img class="headp" id="arch3" src="./translation/arch3.jpg"></a>
+                <img class="headg" id="arch3" src="./translation/arch3.gif">
+                <a href=longevity.html><img class="headp" id="arch1" src="./translation/arch1.jpg"></a>
+                <img class="headg" id="arch1" src="./translation/arch1.gif">
+            </div>
+            <a href=https://www.google.com/maps/@39.953905,116.873109,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPqng1QabNeG-MsJytSGImmcONs4DGjP7ImowgG!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPqng1QabNeG-MsJytSGImmcONs4DGjP7ImowgG%3Dw203-h152-k-no!7i2048!8i1536?entry=ttu><img id="location" src="./translation/location.png"></a>
+            <div onclick="innerHTML = Date()" id="text"><p>there was <span id="text1">something</span> here once</p></div>
+            <a href=https://www.nudoooo.zone><img id="icon" src="icon1.png"></a>
+            <script></script>
+        </body>
+    </html>
+
+    <!-- IMAGE SOURCES 
+    background:https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=赫鲁晓夫楼&step_word=&hs=0&pn=41&spn=0&di=7308398814245683201&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=592810762%2C2105223046&os=1776944412%2C2181953728&simid=592810762%2C2105223046&adpicid=0&lpn=0&ln=441&fr=&fmq=1708867713922_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined&copyright=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=https%3A%2F%2Fp0.itc.cn%2Fimages01%2F20200529%2Fdd288a3c75514b13b8aeac8b7c920dec.jpeg&fromurl=ippr_z2C%24qAzdH3FAzdH3F4_z%26e3Bf5i7_z%26e3Bv54AzdH3FwAzdH3Fnlbcacdlb_8da80l9b9AzdH3F%3Fret1%3Daaa88c_no_w%26fv4%3D8aad_z%26e3Bclaa99_z%26e3Ba_z%26e3Bdbkc-9wk%3F_u%3Dtg1jx_fjsjvp_b&gsm=1e&rpstart=0&rpnum=0&islist=&querylist=&nojc=undefined&dyTabStr=MCwxLDMsMiw0LDYsNSw3LDgsOQ%3D%3D&lid=10502476907339424423
+    -->
