@@ -6,9 +6,9 @@
             <link rel="shortcut icon" href="icon1.ico" type="image/x-icon" />
             <style>
                 body {
-                    background-image: url("./translation5/bg.jpg");
+                    background-image: url("./translation5/bg.png");
                     background-repeat: repeat;
-                    background-size:contain;
+                    background-size:53vw;
                     white-space: pre;
                     cursor: auto; 
                 }
@@ -17,67 +17,212 @@
                     white-space: normal;
                 }
                 #text{
+                    transition-duration: 0.5s;
+                    filter:blur(1px);
                     z-index: 100;
                     position:absolute;
                     color:red;
                     background-color: white;
-                    width: 90vw;
+                    width: 30vw;
                     left: 5vw;
-                    top: 14vw;
+                    top: 6vw;
                     text-decoration-line: none;
                     text-decoration: none;
-                    font-size: 20vw;
-                    line-height: 20vw;
+                    font-size: 6vw;
+                    line-height: 6vw;
                     font-family: monospace;
                     text-align: center;
                     letter-spacing: 0px;
                     /* filter: drop-shadow(1px 1px 0px white); */
+                }#text:hover{
+                    filter: brightness(2);
+                    /* border: 5px solid yellow; */
                 }
                 #text1{
+                    transition-duration: 0.5s;
+                    filter:blur(1px);
                     z-index: 100;
                     position:absolute;
                     color:YELLOW;
                     background-color: RED;
-                    width: 90vw;
+                    width: 30vw;
                     left: 5vw;
-                    top: 14vw;
-                    text-decoration-line: none;
-                    text-decoration: none;
-                    font-size: 10vw;
-                    line-height: 10vw;
-                    font-family: monospace;
-                    text-align: center;
-                    letter-spacing: 0px;
-                    /* filter: drop-shadow(1px 1px 0px white); */
-                }
-                #button{
-                    z-index: 100;
-                    position:absolute;
-                    color:yellow;
-                    /* background-color: red; */
-                    width: 14vw;
-                    right: 5vw;
-                    top: 5vh;
+                    top: 6vw;
                     text-decoration-line: none;
                     text-decoration: none;
                     font-size: 3vw;
                     line-height: 3vw;
                     font-family: monospace;
-                    text-align: right;
+                    text-align: center;
                     letter-spacing: 0px;
                     /* filter: drop-shadow(1px 1px 0px white); */
+                }#text1:hover{
+                    filter: brightness(2);
+                    /* border: 5px solid yellow; */
                 }
-                #button:hover{
+                .top{
+                    cursor: pointer;
+                    z-index: 100;
+                    position:fixed;
+                    color:red;
+                    background-color: white;
+                    width: 21vw;
+                    top: -14px;
+                    text-decoration-line: none;
+                    text-decoration: none;
+                    text-shadow: 0px 0px 1px rgba(255, 0, 0, 1);
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-family: monospace;
+                    letter-spacing: 0px;
+                    filter: blur(0.8px);
+                }
+                #button1{
+                    left: 0;
+                    text-align: left;
+                    /* filter: drop-shadow(1px 1px 0px white); */
+                }       
+                #button2{
+                    left: 20vw;
+                    text-align: left;
+                    /* filter: drop-shadow(1px 1px 0px white); */
+                }        
+                #title{
+                    right: 40vw;
+                    text-align: center;
+                    /* filter: drop-shadow(1px 1px 0px white); */
+                }
+                #button4{
+                    right: 0;
+                    text-align: right;
+                    /* filter: drop-shadow(1px 1px 0px white); */
+                }
+                #button3{
+                    right: 20vw;
+                    text-align: right;
+                    /* filter: drop-shadow(1px 1px 0px white); */
+                }
+                .top:hover{
                     color:black;
+                    text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
                     background-color: rgb(255, 255, 255);
-                    filter: drop-shadow(0px 0px 10px white);
+                    /* filter: drop-shadow(0px 0px 10px white); */
+                }
+                #chaxun{
+                    transition-duration: 1s;
+                    filter: blur(0.6px);
+                    top: 8vw;
+                    left: 66vw;
+                    cursor: not-allowed;
+                    z-index: 20;
+                    position: absolute;
+                    width: 25vw;
+                }#chaxun:hover{
+                    filter: brightness(2);
+                    /* border: 5px solid yellow; */
+                }
+                #chaxunb{
+                    transition-duration: 1s;
+                    filter: blur(0.5px);
+                    top: 28vw;
+                    left: 77vw;
+                    z-index: 20;
+                    position: absolute;
+                    width: 6vw;
+                }#chaxunb:hover{
+                    filter: brightness(2);
+                    /* border: 5px solid yellow; */
+                }
+                #welcome{
+                    transition-duration: 1s;
+                    filter: blur(1px);
+                    bottom: 3vw;
+                    left: 45vw;
+                    cursor: not-allowed;
+                    z-index: 20;
+                    position: absolute;
+                    width: 30vw;
+                }#welcome:hover{
+                    filter: brightness(2);
+                    /* border: 5px solid yellow; */
+                }
+                #obj{
+                    cursor: help;
+                    transition-duration: 1s;
+                    filter: blur(1px);
+                    top: 8vw;
+                    left: 2vw;
+                    z-index: 10;
+                    position: absolute;
+                    width: 65vw;
+                    height: 83vh;
+                }#obj:hover{
+                    filter: brightness(2);
+                    /* border: 5px solid yellow; */
+                }
+                #tel{
+                    transition-duration: 0.5s;
+                    filter:blur(0.3px);
+                    z-index: 5;
+                    position:absolute;
+                    color:yellow;
+                    left: 6vw;
+                    bottom: 3vw;
+                    text-decoration-line: none;
+                    text-decoration: none;
+                    font-size: 30px;
+                    line-height: 30px;
+                    font-family: monospace;
+                    text-align: left;
+                    letter-spacing: 0px;
+                    /* filter: drop-shadow(1px 1px 0px white); */
+                }#tel:hover{
+                    filter: brightness(2);
+                    /* border: 5px solid yellow; */
+                }
+                #bt1{
+                    transition-duration: 1s;
+                    filter: blur(1px);
+                    top: 26vw;
+                    left: 7vw;
+                    cursor: not-allowed;
+                    z-index: 20;
+                    position: absolute;
+                    width: 6vw;
+                }#bt1:hover{
+                    filter: brightness(2);
+                    /* border: 5px solid yellow; */
+                }
+                #bt2{
+                    transition-duration: 1s;
+                    filter: blur(1px);
+                    bottom: 21vw;
+                    left: 11vw;
+                    cursor: not-allowed;
+                    z-index: 20;
+                    position: absolute;
+                    width: 6vw;
+                }#bt2:hover{
+                    filter: brightness(2);
+                    /* border: 5px solid yellow; */
                 }
             </style>
         </head>
         <body>
-            <a href="https://nudoooo.zone/fulushou/"><p id="button">go————></p></a>
-            <p id="text1">HOTEL</p>
-            <p id="text">TIAN ZI</p>
+            <a href="https://nudoooo.zone/fulushou/"><p class="top" id="button1">询问<br>Inquire</p></a>
+            <a href="https://nudoooo.zone/fulushou/"><p class="top" id="button2">关于<br>About</p></a>
+            <a href="https://nudoooo.zone/fulushou/"><p class="top" id="title">天子大酒店<br>&nbsp;</p></a>
+            <a href="https://nudoooo.zone/fulushou/"><p class="top" id="button4">返回<br>Back</p></a>
+            <a href="https://nudoooo.zone/fulushou/"><p class="top" id="button3">预订<br>Book</p></a>
+            <a href="https://nudoooo.zone/fulushou/"><p id="text1">HOTEL</p></a>
+            <a href="https://nudoooo.zone/fulushou/"><p id="text">TIAN ZI</p></a>
+            <img src="./translation5/chaxun.png" id="chaxun">
+            <a href="https://nudoooo.zone/fulushou/"><img src="./translation5/chaxunb.png" id="chaxunb"></a>
+            <a href="https://nudoooo.zone/fulushou/"><img src="./translation5/welcome.png" id="welcome"></a>
+            <img src="./translation5/objects.png" id="obj">
+            <p id="tel">TEL: 0283-23219491</p>
+            <a href="https://nudoooo.zone/fulushou/"><img src="./translation5/bt1.png" id="bt1"></a>
+            <a href="https://nudoooo.zone/fulushou/"><img src="./translation5/bt2.png" id="bt2"></a>
             <script></script>
         </body>
     </html>
